@@ -1,0 +1,48 @@
+{
+  "name": "pi-obsidian",
+  "version": "0.2.3",
+  "description": "Pi package for Obsidian vaults — read, write, search, visualize (Mermaid, Canvas), and plan projects (Kanban, dashboards, daily notes). 13 tools.",
+  "keywords": [
+    "pi-package",
+    "obsidian",
+    "notes",
+    "markdown",
+    "vault",
+    "knowledge-management"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/favilo/pi-obsidian.git"
+  },
+  "files": [
+    "extensions",
+    "skills",
+    "docs",
+    "README.md",
+    "package.json"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-ai": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-ai": "*",
+    "typebox": "*",
+    "@types/node": "*",
+    "typescript": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/obsidian/index.ts"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  }
+}
